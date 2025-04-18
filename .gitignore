@@ -1,8 +1,7 @@
 # Ignore data and cache files
-data/cache/
-data/error_log_pdf/
-data/non_pdf_files/
-data/classify_data/
+data/
+Older Versions/
+
 
 # Ignore Python cache and virtual environments
 __pycache__/
