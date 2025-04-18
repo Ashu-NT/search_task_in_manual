@@ -1,0 +1,19 @@
+# Ignore data and cache files
+data/cache/
+data/error_log_pdf/
+data/non_pdf_files/
+data/classify_data/
+
+# Ignore Python cache and virtual environments
+__pycache__/
+venv/
+.env
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+
+# Ignore large files
+*.pkl
+*.zip
+*.tar.gz
