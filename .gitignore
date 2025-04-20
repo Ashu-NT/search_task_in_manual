@@ -1,6 +1,6 @@
 # Ignore data and cache files
-data/
-Older Versions/
+data
+Older Versions
 
 
 # Ignore Python cache and virtual environments
