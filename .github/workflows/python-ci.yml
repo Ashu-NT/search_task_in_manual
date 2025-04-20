@@ -27,7 +27,7 @@ jobs:
     - name: Install Python dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install pandas pypdf pdfplumber rapidfuzz pytest reportlab
+        pip install pandas pypdf pdfplumber rapidfuzz pytest reportlab pytest-mock
 
     - name: Run tests
       run: |
