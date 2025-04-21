@@ -14,7 +14,7 @@ A high-performance data processing pipeline that extracts maintenance tasks from
 - [Testing](#testing)
 - [Contributing](#contributing)
 - [License](#license)
-- [User Guide](#user Guide)
+- [User Guide](#user-guide)
 - [Troubleshooting](#troubleshooting)
 
 ---
