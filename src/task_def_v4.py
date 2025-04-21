@@ -106,7 +106,7 @@ class DocumentProcessor:
         logger.info(f"🔎 Data type of system codes in task_df: {self.df_task_def['code'].dtype}")
 
     @staticmethod
-    def _extract_manual_text(row: pd.Series) -> Tuple[str, List[Tuple[str, str]], str]:
+    def _extract_manual_text(row: pd.Series) -> Tuple[str, List[Tuple[str, str]], str, Dict[int,str]]:
         """Optimized text extraction with combined processing"""
         manual_id = row['IDENTIFIER*']
         file_path = row['file path']
