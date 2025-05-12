@@ -224,12 +224,12 @@ class DocumentProcessor:
 class TaskManager:
     # Enhanced task splitting regex for numbered tasks
     _task_split_re = re.compile(
-        r'(?:^|(?<=\s))'                      # Start of string or after whitespace
-        r'(?:\d+[\.\)]|step\s+\d+[:\.]?)'       # Task markers: e.g., "1.", "2)", "step 3:" 
-        r'\s*'                                # Optional whitespace
-        r'(.*?)'                              # Lazily capture the task text
-        r'(?=\s*(?:\d+[\.\)]|step\s+\d+|$))',   # Lookahead for the next marker or end of string
-        re.IGNORECASE | re.DOTALL
+    r'(?:^|(?<=\s))'                      # Start of string or after whitespace
+    r'(?:\d+[\.\)]|step\s+\d+[:\.]?|[-•‣▪▫⁃⦾⦿◦◘◙◼◻▸▹►▻➢➣➤➥➔→⇒⟹])'  # Task markers: numbers, steps, bullets, letters, roman numerals
+    r'\s*'                                # Optional whitespace
+    r'(.*?)'                              # Lazily capture the task text
+    r'(?=\s*(?:\d+[\.\)]|step\s+\d+|[-•‣▪▫⁃⦾⦿◦◘◙◼◻▸▹►▻➢➣➤➥➔→⇒⟹]|$))',  # Lookahead for the next marker or end of string
+    re.IGNORECASE | re.DOTALL
     )
     
     # Expanded reference removal regex

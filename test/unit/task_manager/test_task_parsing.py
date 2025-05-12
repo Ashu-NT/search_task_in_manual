@@ -28,6 +28,10 @@ class TestTaskParsing:
             ("1. Check temp (100°C) 2) Validate JSON {format}", 
              ["check temp", "validate json"]),
             
+            # Special characters
+            ("• Check temp (100°C) ► Validate JSON {format}", 
+             ["check temp", "validate json"]),
+            
             # Nested parentheses
             ("1. (Main) System check (see chapter 3)", 
              ["system check"]),
